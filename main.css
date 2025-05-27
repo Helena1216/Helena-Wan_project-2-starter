@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Placeholder style */
+.gray-box {
+  background-color: lightgray;
+  color: #333;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Header */
+header {
+  width: 100%;
+}
+
+header .gray-box {
+  width: 90%;
+  height: 60px;
+}
+
+/* Description */
+.description {
+  width: 90%;
+  min-height: 80px;
+}
+
+/* Gallery */
+.media-gallery {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin-top: 10px;
+}
+
+.media {
+  width: 30%;
+  height: 120px;
+}
+
+/* Resource section */
+.resources {
+  width: 90%;
+  height: 80px;
+}
+
+/* Hyperlinks */
+.hyperlinks {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.link {
+  width: 45%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 60px;
+}
