@@ -1,63 +1,206 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bone Planet News</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="gray-box">
-    <h1>Bone Planet Royal Canine Council</h1>
-    <p>Dog Citizen Portal <input type="text" placeholder="Search" /></p>
-  </header>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bone Planet News</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
 
-  <nav class="nav-links">
-    <a href="#">Home</a>
-    <a href="#">Paw News Headlines</a>
-    <a href="#">Local Tail Wags</a>
-    <a href="#">Bork & Order Affairs</a>
-    <a href="#">Floofwatch Corner</a>
-    <a href="#">Royal Archives</a>
-    <a href="#">Bark Laws & Treaties</a>
-    <a href="#">Canine Foreign Affairs</a>
-    <a href="#">Community of Good Dogs</a>
-    <a href="main.html">Go to Content Page</a>
-  </nav>
-
-  <section class="announcement gray-box">Royal Announcements</section>
-
-  <!-- 🐾 Banner + News -->
-  <section class="top-row">
-    <div class="banner gray-box">[Large Banner Image]</div>
-    <div class="side-news">
-      <div class="gray-box">Hot Nose Reports</div>
-      <div class="gray-box">Local Sniffs</div>
-      <div class="gray-box">Overseas Howls</div>
+    <div class="top-banner">
+      <img src="banner.jpg" alt="Bone Planet Banner">
+      <div class="top-bar">
+        <div class="site-title">Bone Planet Royal Canine Council</div>
+        <div class="top-search">
+          <input type="text" placeholder="Dog Citizen Portal" />
+          <input type="text" class="search-input" placeholder="Search"/>
+        </div>
+      </div>
     </div>
+    
+    <nav class="main-nav">
+      <a href="https://www.bilibili.com/video/BV17aHLeXEfw/?spm_id_from=333.337.search-card.all.click&vd_source=3673edc497c919bb65b2ec5bde6c8f23" target="_blank">Home</a>
+      <a href="https://www.youtube.com/watch?v=_NED_v716U4" target="_blank">Paw News Headlines</a>
+      <a href="https://www.youtube.com/shorts/_T54aoeLTNE " target="_blank">Local Tail Wags</a>
+      <a href="https://www.bilibili.com/video/BV1UE42137Ui/?spm_id_from=333.337.search-card.all.click&vd_source=3673edc497c919bb65b2ec5bde6c8f23" target="_blank">Bork & Order Affairs</a>
+      <a href="https://www.bilibili.com/video/BV14Ec9eWEXm/?spm_id_from=333.1387.favlist.content.click&vd_source=3673edc497c919bb65b2ec5bde6c8f23" target="_blank">Floofwatch Corner</a>
+      <a href="https://www.youtube.com/watch?v=74mx2OWM6mE" target="_blank">Royal Archives</a>
+      <a href="https://www.bilibili.com/video/BV1tG41177ha/?spm_id_from=333.337.search-card.all.click&vd_source=3673edc497c919bb65b2ec5bde6c8f23" target="_blank">Bark Laws & Treaties</a>
+      <a href="https://www.bilibili.com/video/BV1YodSYVEfF/?spm_id_from=333.1387.favlist.content.click&vd_source=3673edc497c919bb65b2ec5bde6c8f23" target="_blank">Canine Foreign Affairs</a>
+      <a href="https://www.youtube.com/watch?v=Jq75vcZNuRQ" target="_blank">Community of Good Dogs</a>
+      <a href="main.html" class="nav-content-btn">Go to Content Page</a>
+    </nav>
+
+    <section class="notice-bar">
+      <div class="notice-label">Royal Announcement</div>
+      <div class="notice-list">
+        <span>🐾 The King is visiting the Cat Planet this week!</span>
+        <span>🐾 New dog parks opening soon in Bark City!</span>
+        <span>🐾 Bone Bank launches treat-saving account.</span>
+      </div>
+    </section>
+    
+  <div class="news-row">
+    <div class="main-banner-img2">
+      <img src="1.jpg" alt="Banner Image">
+    </div>
+    
+    <div class="news-tabs-area">
+      <div class="tabs">
+        <div class="tab active" onclick="switchTab(event, 0)">Hot Nose Reports</div>
+        <div class="tab" onclick="switchTab(event, 1)">Local Sniffs</div>
+        <div class="tab" onclick="switchTab(event, 2)">Overseas Howls</div>
+      </div>
+
+      <div class="tab-content" id="tab0">
+        <div class="news-top">
+          <span class="news-tag">[Breaking]</span>
+          <span class="news-title">King Coco arrested 3 squirrels for illegal bone trading!</span>
+        </div>
+        <div class="news-item">
+          <span class="news-title2">Barkland hosts annual Tail Wag Parade this Saturday.</span>
+          <span class="news-desc">2025/06/01 · Pups of all breeds welcome for a day of wagging, games, and snacks.</span>
+        </div>
+        <div class="news-item">
+          <span class="news-title2">Dog-mayor signs new "No Leash, No Problem" bill!</span>
+          <span class="news-desc">2025/05/29 · New law grants all canines more park freedom.</span>
+        </div>
+        <div class="news-item">
+          <span class="news-title2">New treat store opens in Bark City downtown.</span>
+          <span class="news-desc">2025/05/28 · Featuring the world’s largest bone display.</span>
+        </div>
+      </div>
+      <div class="tab-content" id="tab1" style="display: none;">
+        <div class="news-top">
+          <span class="news-tag">[Event]</span>
+          <span class="news-title">Floofwatch Corner: Puppy Social is back this Friday!</span>
+        </div>
+        <div class="news-item">
+          <span class="news-title2">Senior Dog Yoga Class registration open.</span>
+          <span class="news-desc">2025/05/25 · Healthy joints for happy tails.</span>
+        </div>
+        <div class="news-item">
+          <span class="news-title2">Golden Poodle finds owner after week-long adventure.</span>
+          <span class="news-desc">2025/05/23 · Heartwarming reunion in Good Dogs Park.</span>
+        </div>
+        <div class="news-item">
+          <span class="news-title2">Bone Bank offering free treat samples to all new members.</span>
+          <span class="news-desc">2025/05/20 · Limited time only!</span>
+        </div>
+      </div>
+      <div class="tab-content" id="tab2" style="display: none;">
+        <div class="news-top">
+          <span class="news-tag">[Global]</span>
+          <span class="news-title">Canine delegation returns from Cat Planet summit.</span>
+        </div>
+        <div class="news-item">
+          <span class="news-title2">Dog artists win gold at Pawlympics Art Festival.</span>
+          <span class="news-desc">2025/05/18 · Stunning tail-paintings wowed the judges.</span>
+        </div>
+        <div class="news-item">
+          <span class="news-title2">International Bark Mail delays expected next week.</span>
+          <span class="news-desc">2025/05/15 · Please allow extra delivery time for bones and toys.</span>
+        </div>
+        <div class="news-item">
+          <span class="news-title2">Honorary title “World’s Goodest Dog” awarded to Coco.</span>
+          <span class="news-desc">2025/05/12 · Awarded at the annual Good Dog Convention.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+    <section class="three-columns-news">
+    <div class="column news-list">
+      <h3>Goodest Doggos</h3>
+      <div class="news-item">
+        <img src="4.jpg" alt="Palace Policies">
+        <div class="news-text">
+          <strong>Professor Sheppy’s Big Discovery</strong>
+          <p>This brilliant border collie, Professor Sheppy, has just decoded the secrets of the ancient bone scrolls. Dog historians are losing their minds.</p>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <img src="2.jpg" alt="Who We Bark">
+        <div class="news-text">
+          <strong>Model Employee of the Month: McDoggo</strong>
+          <p>Wearing the famous red hat, McDoggo has never missed a shift and is known for delivering the fastest “bark-and-fries” in town. All the pups want to be as hardworking as him!</p>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <img src="3.jpg" alt="Old Bone Scrolls">
+        <div class="news-text">
+          <strong>Sir Fluffington…?</strong>
+          <p>Nobody really knows why Sir Fluffington is here, but rumor has it his parents donated a lot of treats to the council. He sure looks happy though!</p>
+        </div>
+      </div>
+    </div>
+
+  <div class="column pic-news">
+    <h3>Doggo Moments</h3>
+    
+    <div class="img-row">
+      <div>
+        <img src="5.jpg" alt="Golden Relax">
+        <p>Golden Retriever CEO spotted vacationing on newly purchased private island.
+  Sources say he’s “barking” about real estate investments again!
+  </p>
+      </div>
+      <div>
+        <img src="6.jpg" alt="Flying Husky">
+        <p>Husky’s new yoga pose goes viral across Bone Planet.
+  Paws everywhere are stretching in style!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column pic-news">
+    <h3>Bark & Order</h3>
+
+    <div class="img-row">
+      <div>
+        <img src="8.jpg" alt="Police Dog">
+        <p>Police recruiting new German Shepherds for royal guard. Please do not excessively pet the officers while on duty!</p>
+      </div>
+
+      <div>
+        <img src="7.jpg" alt="Discussion Dogs">
+        <p>The annual “Good Pal Pups” contest is starting soon! Bring your best friend and join the fun—top winners receive lifetime treat supplies and custom squeaky toys!</p>
+      </div>
+    </div>
+  </div>
+
   </section>
 
-  <!-- 🐾 Info Blocks -->
-  <section class="grid-4">
-    <div class="gray-box">Palace Policies</div>
-    <div class="gray-box">Who We Bark</div>
-    <div class="gray-box">Old Bone Scrolls</div>
-    <div class="gray-box">Hi-Tech Fetch Division</div>
-  </section>
+    <footer>
+      <div class="footer-banner">Honesty · Loyalty · Harmony · Wisdom</div>
+      <div class="footer-tags">
+        <button>Doggo Art</button>
+        <button>Fetch Tech</button>
+        <button>Bark Stories</button>
+        <button>Ask King Coco</button>
+        <button>Find Treats</button>
+      </div>
+    </footer>
 
-  <!-- 🐾 Small preview boxes -->
-  <section class="grid-2">
-    <div class="gray-box">[box]</div>
-    <div class="gray-box">[box]</div>
-  </section>
+  <script>
+  function switchTab(event, idx) {
+    document.querySelectorAll('.tab').forEach((el, i) => {
+      if (i === idx) {
+        el.classList.add('active');
+      } else {
+        el.classList.remove('active');
+      }
+    });
+    document.querySelectorAll('.tab-content').forEach((el, i) => {
+      el.style.display = (i === idx) ? '' : 'none';
+    });
+  }
+  </script>
 
-  <!-- 🐾 Media rows -->
-  <section class="grid-3">
-    <div class="gray-box">Goodest Doggos</div>
-    <div class="gray-box">Snaps & Snouts</div>
-    <div class="gray-box">Voices from the Kennel</div>
-  </section>
-
-  <footer class="gray-box">Footer Placeholder</footer>
-</body>
-</html>
+  </body>
+  </html>

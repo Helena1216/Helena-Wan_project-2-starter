@@ -2,40 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bone Planet – Newsroom</title>
-  <link rel="stylesheet" href="main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>King Coco's Royal Court</title>
+  <link rel="stylesheet" href="main.css"/>
 </head>
+
 <body>
-  <header>
-    <div class="gray-box">Community Name / Logo</div>
-    <nav class="gray-box">Navigation Bar Placeholder</nav>
+  <div class="floating-gif heart-gif">
+    <img src="heart.gif" alt="Heart Dog" />
+  </div>
+
+  <header class="royal-header">
+  <div class="king-portrait-wrap">
+    <img class="king-portrait" src="king.jpg" alt="King Coco Portrait"/>
+    <span class="king-glow"></span>
+  </div>
+
+    <div>
+      <h1 class="main-title">Welcome to King Coco’s Royal Court 🐾</h1>
+      <p class="main-desc desc-serif">
+  Welcome to the legendary Bone Planet, ruled by the charismatic King Coco—now joyfully celebrating his 8th birthday! Our kingdom brings together dogs of all breeds (and a few sneaky cats) for a community built on friendship, fun, and fluffy drama. Here, you’ll discover the latest royal birthdays, runway-worthy dog fashion, gossip from the ever-turbulent dog-cat relations, and helpful news for every bone lover. <br>
+  Whether you’re here for the parties, the paw-litics, or the poodle memes—Bone Planet is your forever home. Join us as we celebrate loyalty, laughter, and the unique joy of life under King Coco’s reign!
+</p>
+
+      <div class="big-news">👑 Big News: Celebrate Our Great King Coco’s 8th Birthday! 👑</div>
+    </div>
   </header>
 
   <main>
-    <section class="description gray-box">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra
-        pretium urna, in cursus ipsum tincidunt nec.
-      </p>
+    <section class="card-row">
+      <div class="card">
+        <img src="9.jpg" alt="Star Sunglasses Dog" class="card-img">
+        <h2>⭐ Star Doggo: The Ultimate Fashion Icon</h2>
+        <p>
+          This border collie is setting new trends with star-shaped sunglasses. Fashion week? Every week on Bone Planet!
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="11.jpg" alt="Dog Cat Tension" class="card-img">
+        <h2>Dog & Cat Planet Tensions Rising? 🐱🐶</h2>
+        <p>
+          Sources say a minor dispute over toy territory has <span class="highlight2">escalated dramatically</span>. Is war brewing, or just another day in the interstellar dog-cat relationship? Stay tuned!
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="10.jpg" alt="No Long Nose" class="card-img">
+        <h2>No More "Long Nose" Memes!</h2>
+        <p>
+          The Long-Nose Dog Protection Association urges all netizens:<br>
+          <span class="red-warning">Stop making memes like “Let me do it for you” or “长鼻子狗/车座子梗”!</span>
+        </p>
+        <a href="https://www.bilibili.com/video/BV1HM411t7H8?spm_id_from=333.788.recommend_more_video.-1&vd_source=3673edc497c919bb65b2ec5bde6c8f23" target="_blank" class="funny-btn">
+          Sign the petition (or... watch this "serious" PSA video)
+        </a>
+      </div>
     </section>
 
-    <section class="media-gallery">
-      <div class="gray-box media">Image/Video Placeholder 1</div>
-      <div class="gray-box media">Image/Video Placeholder 2</div>
-      <div class="gray-box media">Image/Video Placeholder 3</div>
-    </section>
+  <span class="dog-dance-text" id="dog-dance-tip">🐶🐾Catch me if you can!</span>
 
-    <section class="resources gray-box">
-      Resource Links / Documents Placeholder
-    </section>
 
-    <section class="hyperlinks">
-      <a href="index.html" class="gray-box link">← Back to Landing Page</a>
-      <a href="#" class="gray-box link">External Source Link</a>
+    <section class="royal-resources">
+      <h3>Royal Resources <span class="crown">👑</span></h3>
+      <ul>
+        <li>🐩 <a href="https://en.wikipedia.org/wiki/Poodle" target="_blank">Learn more about Royal Poodles</a></li>
+        <li>🔙 <a href="index.html">Back to Landing Page</a></li>
+        <li>🎉 <a href="#">King Coco’s Birthday Party Event Details (Coming Soon!)</a></li>
+      </ul>
     </section>
   </main>
 
-  <footer class="gray-box">Footer Placeholder</footer>
+  <footer>
+    <img src="king.jpg" alt="King Coco" class="footer-king">
+    <span class="crown">👑</span>
+  </footer>
+
+<img src="dog-dance.gif" id="dancing-dog" alt="Dancing Dog" />
+
+<script>
+function randomMoveDog() {
+  const dog = document.getElementById('dancing-dog');
+  const w = window.innerWidth - 100;
+  const h = window.innerHeight - 120;
+  const left = Math.random() * w;
+  const top = Math.random() * h;
+  dog.style.left = left + "px";
+  dog.style.top = top + "px";
+}
+
+setInterval(randomMoveDog, 1500);
+window.onload = randomMoveDog;
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('dancing-dog').addEventListener('click', function() {
+    window.open('https://www.bilibili.com/video/BV1UT42167xb/?spm_id_from=333.337.search-card.all.click&vd_source=3673edc497c919bb65b2ec5bde6c8f23');
+  });
+});
+</script>
 </body>
 </html>
